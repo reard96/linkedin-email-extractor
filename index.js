@@ -92,7 +92,7 @@ async function getEmails(index) {
             .insert('#username', email)
             .insert('#password', password)
             .click('.login__form button')
-            .wait('.nav-item--mynetwork')
+            .wait('#mynetwork-tab-icon.nav-item__icon')
             .run(() => {
                 getEmail(index);
             });
@@ -115,8 +115,8 @@ async function getEmail(index) {
             data[index].processed_count += 1;
             try {
                 await nightmare
-                    .wait('.mynetwork-tab-icon.nav-item__icon')
-                    .click('.mynetwork-tab-icon a')
+                    .wait('#mynetwork-tab-icon.nav-item__icon')
+                    .click('#mynetwork-tab-icon.nav-item__icon')
                     .wait(`${version ? '.mn-community-summary__link' : '.js-mn-origami-rail-card__connection-count'}`)
                     .click(`${version ? '.mn-community-summary__link' : '.js-mn-origami-rail-card__connection-count'}`)
                     .wait('.mn-connections__search-input')
