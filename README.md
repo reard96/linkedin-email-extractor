@@ -1,4 +1,6 @@
 # linkedin-email-extractor
+**Updated as of 5/2/19 - works with new LinkedIn redesign. Thanks to [FutoRicky](https://github.com/FutoRicky/linkedin-email-extractor) and [anhuin69](https://github.com/anhuin69/linkedin-email-extractor) for the code, all I did was update some links & DOM elements.**
+
 ### A node web scraper to extract your linkedin connection emails
 *Currently not being maintained, but open to Pull Requests.*
 
